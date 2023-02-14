@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ededed;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 7px;
+    background: linear-gradient(145deg, #f3f3f3, #cccccc);
+    box-shadow:  25px 25px 51px #e1e1e1,
+                 -25px -25px 51px #e5e5e5;
+}
+button:active {
+    background: linear-gradient(145deg, #b3b3b3, #d5d5d5);
+    box-shadow:  20px 20px 60px #a9a9a9,
+                 -20px -20px 60px #e5e5e5;
+}
+.calculator {
+    background-color: #fff;
+    box-shadow:  19px 19px 100px #b5b5b5,
+    -19px -19px 100px #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.calculator div {
+    margin: 20px 0;
+}
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.calculator__key--enter {
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+}
+.calculator__output {
+    direction: rtl;
+    border-radius: 20px;
+    background: #cccccc;
+    box-shadow:  25px 25px 51px #e1e1e1,
+                 -25px -25px 51px #e5e5e5;
+    padding: 15px;
+}
+.equal {
+    background: linear-gradient(145deg, #80c4f8, #6ca5d1);
+}
+.equal:active {
+    background: linear-gradient(145deg,#6ca5d1 , #80c4f8);
+}
+.sum ,.minus {
+    background: linear-gradient(145deg, #80f8d4, #6cd1b2);
+}
+.sum:active , .minus:active {
+    background: linear-gradient(145deg, #6cd1b2, #80f8d4);
+}
+.multip , .division {
+    background: linear-gradient(145deg, #a48fff, #8a79e0);
+}
+.multip:active , .division:active {
+    background: linear-gradient(145deg, #8a79e0, #a48fff);
+}
